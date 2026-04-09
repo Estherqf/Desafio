@@ -1,0 +1,192 @@
+/* --- RESET Y COLORES --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* --- CABECERA --- */
+header {
+    background-color: rgba(13, 13, 13, 0.98);
+    padding: 20px 0;
+    border-bottom: 1px solid #2a2a2a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand { display: inline-block; width: 30%; }
+.brand h1 { margin: 0; font-size: 1.5rem; letter-spacing: 2px; color: #fff; }
+.brand span { color: #c5a059; font-weight: 300; }
+
+nav { display: inline-block; width: 68%; text-align: right; }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+nav a:hover { color: #c5a059; }
+
+/* --- HERO --- */
+.hero {
+    background: url('../img/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 550px;
+}
+.hero-mask { background: rgba(0,0,0,0.65); height: 100%; text-align: center; }
+.hero-info { padding-top: 180px; }
+.tag-oro { color: #c5a059; letter-spacing: 4px; font-size: 0.9rem; }
+.hero-info h2 { font-size: 3rem; color: #fff; margin: 15px 0; }
+.btn-oro {
+    display: inline-block;
+    background: #c5a059;
+    color: #000;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* --- MAQUETACIÓN --- */
+.seccion-padding { padding: 60px 0; }
+.col-60 { display: inline-block; width: 58%; vertical-align: top; }
+.col-40 { display: inline-block; width: 38%; margin-left: 3%; vertical-align: top; }
+.col-50 { display: inline-block; width: 48%; vertical-align: top; }
+
+.linea-oro { border-left: 4px solid #c5a059; padding-left: 15px; color: #c5a059; }
+
+/* SERVICIOS */
+.card-servicios { background: #1a1a1a; padding: 30px; border-radius: 8px; border: 1px solid #333; }
+.badge {
+    display: inline-block;
+    border: 1px solid #c5a059;
+    color: #c5a059;
+    padding: 6px 12px;
+    margin: 5px;
+    font-size: 0.8rem;
+}
+
+/* GALERÍA */
+.mosaico-galeria { margin-top: 30px; }
+.foto-box { display: inline-block; position: relative; overflow: hidden; border-radius: 10px; }
+.grande { width: 100%; height: 350px; margin-bottom: 15px; }
+.pequeña { width: 48.5%; height: 220px; }
+.margin-l { margin-left: 2%; }
+.foto-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.foto-box:hover img { transform: scale(1.1); }
+.foto-overlay {
+    position: absolute; bottom: 0; width: 100%;
+    background: linear-gradient(transparent, #000);
+    padding: 15px; text-align: center; font-weight: bold;
+}
+
+/* UBICACIÓN Y HORARIOS */
+.img-mapa { width: 100%; border-radius: 8px; border: 1px solid #444; }
+.card-horarios { background: #1a1a1a; padding: 30px; border-radius: 15px; margin-left: 15px; border: 1px solid #333; }
+.img-horario-box { margin-top: 20px; overflow: hidden; border-radius: 10px; height: 180px; }
+.img-atencion { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; }
+
+/* --- CONTACTO FINAL (RESTAURADO CON CAJA INTERNA Y ICONOS) --- */
+.seccion-contacto {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.caja-contacto-interna {
+    background: #111;
+    padding: 60px;
+    border-radius: 20px;
+    border: 1px solid #c5a059; /* Borde dorado */
+    box-shadow: 0 10px 30px rgba(197, 160, 89, 0.2); /* Neón dorado suave */
+}
+
+.caja-contacto-interna h3 {
+    color: #c5a059;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.agente {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.btn-contacto, .btn-whatsapp {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 0.95rem;
+}
+
+.btn-contacto {
+    border: 2px solid #fff;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-contacto:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+    transition: box-shadow 0.3s;
+}
+
+.btn-whatsapp:hover {
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+.redes-sociales {
+    margin-top: 50px;
+}
+
+.social-icon {
+    display: inline-block;
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9rem;
+    vertical-align: middle;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #c5a059;
+}
+
+.icono {
+    width: 24px; /* Tamaño del icono */
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* --- FOOTER --- */
+footer {
+    background: #000;
+    padding: 40px 0;
+    text-align: center;
+    color: #555;
+    font-size: 0.8rem;
+}
